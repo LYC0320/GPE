@@ -127,11 +127,6 @@ int main()
 
 	for(int i = 0; i < ans.size(); i += 2)
 	{
-		if(i == ans.size() - 2)
-			cout << ans[i] << " " << ans[i + 1];
-		else
-			cout << ans[i] << " " << ans[i + 1] << endl;
+		cout << ans[i] << " " << ans[i + 1] << endl;
 	}
-
-	while (1);
 }
