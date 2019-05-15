@@ -44,11 +44,13 @@ void traceBack(vector<vector<int> > &dp, int rowIndex, int colIndex, string tmp,
 
 	if (s1[rowIndex - 1] == s2[colIndex - 1])
 	{
+		
 		if (dp[rowIndex][colIndex] == dp[rowIndex - 1][colIndex])
 			traceBack(dp, rowIndex - 1, colIndex, tmp, s1, s2, ans);
 
 		if (dp[rowIndex][colIndex] == dp[rowIndex][colIndex - 1])
 			traceBack(dp, rowIndex, colIndex - 1, tmp, s1, s2, ans);
+
 
 		tmp += s1[rowIndex - 1];
 		traceBack(dp, rowIndex - 1, colIndex - 1, tmp, s1, s2, ans);
