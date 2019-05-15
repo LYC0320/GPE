@@ -33,7 +33,7 @@ string reverseString(string s)
 
 	return tmp;
 }
-
+									// tmp call by value (不同步搜索)
 void traceBack(vector<vector<int> > &dp, int rowIndex, int colIndex, string tmp, string &s1, string &s2, vector<string> &ans)
 {
 	if (rowIndex == 0 || colIndex == 0)
